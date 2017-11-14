@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    // use `Ctrl+P` and type `task` + SPACE + <taskName> to run a task
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "echoCommand": true,
+            "command": "node",
+            "args": [
+                "build/build.js"
+            ],
+            "suppressTaskName": true,
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "watch",
+            "echoCommand": true,
+            "command": "node",
+            "args": [
+                "build/watch.js"
+            ],
+            "suppressTaskName": true,
+            "isBackground": true
+        }
+    ]
+}

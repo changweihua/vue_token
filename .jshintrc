@@ -1,0 +1,47 @@
+{
+  //加强选项：
+  //use es6. 3/5/6
+  "esversion": 6,
+  //循环必须用大括号包起来
+  "curly": true,
+  //设置为true,禁止使用这个选项 ==和 !=，强制使用 ===和 !==。
+  "eqeqeq": false,
+  //允许警告js未来版本中定义的标识符。
+  "futurehostile": true,
+  //检查无效 typeof操作符的值
+  "notypeof": true,
+  //检查变量重复定义
+  // 他接受4个值："inner" 只检查是否在相同的作用域重复定义;"outer" 检查外部作用域;
+  // false 与inne一样; true 允许变量覆盖
+  "shadow": "inner",
+  //ECMAScript 5严格模式
+  // "global" - 全局层面的严格模式"use strict";
+  // "implied" - 文件里面使用"use strict";
+  // false - 禁止使用严格模式
+  // true - 函数上面必须使用一个"use strict";
+  "strict": "implied",
+  //变量未定义
+  "undef": true,
+  //变量定义未使用
+  "unused": true,
+  // 设置为true时，禁止使用var声明变量
+  // "varstmt": true,
+  // "globals": {
+  //     "require": true
+  // },
+  //宽松选项：
+  // 禁止缺少分号警告
+  "asi": true,
+  //环境选项：
+  //暴露浏览器属性的全局变量，列如 window,document;
+  //注意:这个选项不暴露变量 alert或 console。
+  "browser": true,
+  //这个选项定义了全局变量,通常用于日志调试: console, alert等等
+  "devel": true,
+  //这个选项定义全局变量可以当你的代码运行在node的运行时环境
+  "node": true,
+  //这个选项告诉JSHint,输入代码描述了一个ECMAScript 6模块。所有模块的代码解释为严格模式代码。
+  "module": true,
+  //这个选项定义全局暴露的jQuery库。
+  "jquery": true
+}
